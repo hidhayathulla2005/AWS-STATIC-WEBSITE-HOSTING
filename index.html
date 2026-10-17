@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover destinations and thoughtfully planned travel packages with VacayTours.">
+  <title>VacayTours | Discover your next adventure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="logo" href="#home">
+        <span>✦</span>
+        <b>VacayTours</b>
+      </a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div id="navLinks" class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Packages</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Plan a trip ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-shade"></div>
+
+      <div class="wrap hero-content reveal">
+        <p class="eyebrow light">YOUR JOURNEY, YOUR STORY</p>
+        <h1>Discover your<br><em>next adventure.</em></h1>
+        <p class="hero-copy">
+          From quiet mountain mornings to sunlit coastal escapes, find the places that stay with you long after the journey ends.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#destinations">Explore destinations ↗</a>
+          <a class="hero-link" href="#packages">◉ &nbsp; Browse our trips</a>
+        </div>
+        <p class="hero-note">— &nbsp; MADE FOR THE CURIOUS</p>
+      </div>
+
+      <a class="scroll-cue" href="#destinations" aria-label="Scroll to destinations">↓</a>
+    </section>
+
+    <div class="trust">
+      <div class="wrap trust-inner">
+        <b>YOUR NEXT CHAPTER STARTS HERE</b>
+        <span>✧ Thoughtfully curated trips</span>
+        <span>◎ Local experiences</span>
+        <span>↗ Memories over miles</span>
+      </div>
+    </div>
+
+    <section class="section wrap" id="destinations">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">PLACES TO FALL IN LOVE WITH</p>
+          <h2>Find your <em>somewhere.</em></h2>
+        </div>
+        <p>Every destination has a different rhythm. Find the one that feels like yours.</p>
+      </div>
+
+      <div class="filters" aria-label="Filter destinations">
+        <button class="filter active" data-destination-filter="All">All places</button>
+        <button class="filter" data-destination-filter="Beach">Beaches</button>
+        <button class="filter" data-destination-filter="Mountain">Mountains</button>
+        <button class="filter" data-destination-filter="Nature">Nature</button>
+        <button class="filter" data-destination-filter="Heritage">Heritage</button>
+      </div>
+
+      <div class="dest-grid" id="destinationGrid">
+        <article class="dest-card featured reveal" data-category="Mountain">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85" alt="Green hills and mountain landscape" loading="lazy">
+          <div class="dest-info">
+            <small>THE NILGIRIS, TAMIL NADU</small>
+            <h3>Ooty</h3>
+          </div>
+          <span class="dest-arrow">↗</span>
+        </article>
+
+        <article class="dest-card reveal" data-category="Beach">
+          <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=85" alt="Tropical beach with blue water" loading="lazy">
+          <div class="dest-info">
+            <small>SUN, SEA & SLOW DAYS</small>
+            <h3>Goa</h3>
+          </div>
+          <span class="dest-arrow">↗</span>
+        </article>
+
+        <article class="dest-card reveal" data-category="Mountain">
+          <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=900&q=85" alt="Himalayan mountain landscape" loading="lazy">
+          <div class="dest-info">
+            <small>WHERE THE AIR IS FRESH</small>
+            <h3>Manali</h3>
+          </div>
+          <span class="dest-arrow">↗</span>
+        </article>
+
+        <article class="dest-card reveal" data-category="Nature">
+          <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=85" alt="Kerala backwaters and green landscape" loading="lazy">
+          <div class="dest-info">
+            <small>GREEN AT EVERY TURN</small>
+            <h3>Kerala</h3>
+          </div>
+          <span class="dest-arrow">↗</span>
+        </article>
+
+        <article class="dest-card reveal" data-category="Heritage">
+          <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=900&q=85" alt="Jaipur palace architecture" loading="lazy">
+          <div class="dest-info">
+            <small>COLOUR, CRAFT & CULTURE</small>
+            <h3>Jaipur</h3>
+          </div>
+          <span class="dest-arrow">↗</span>
+        </article>
+
+        <article class="dest-card reveal" data-category="Beach">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85" alt="Tropical Bali island" loading="lazy">
+          <div class="dest-info">
+            <small>AN ISLAND STATE OF MIND</small>
+            <h3>Bali</h3>
+          </div>
+          <span class="dest-arrow">↗</span>
+        </article>
+      </div>
+
+      <p id="destinationEmpty" class="empty" hidden>No destinations in this category yet. Try another filter.</p>
+    </section>
+
+    <section class="section packages" id="packages">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">THE GOOD PART IS GETTING THERE</p>
+            <h2>Trips worth <em>taking.</em></h2>
+          </div>
+          <p>Easy-to-love itineraries for a long weekend, family holiday, or much-needed escape.</p>
+        </div>
+
+        <div class="package-toolbar">
+          <b>HANDPICKED GETAWAYS / 2026 COLLECTION</b>
+          <label>
+            <span class="sr-only">Filter tour packages</span>
+            <select id="packageFilter">
+              <option value="All">All experiences</option>
+              <option value="Nature">Nature & slow travel</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Culture">Culture & heritage</option>
+              <option value="Beach">Beach escape</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="package-grid" id="packageGrid">
+          <article class="package-card reveal" data-package-type="Nature">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=85" alt="Kerala backwaters" loading="lazy">
+              <span>SLOW TRAVEL</span>
+              <button class="save-btn" aria-label="Save Kerala package">♡</button>
+            </div>
+            <div class="package-body">
+              <p class="meta">◷ 4 days / 3 nights <span>India</span></p>
+              <h3>Kerala, at your own pace</h3>
+              <p>Backwater cruises, lush tea gardens, and the quiet you needed.</p>
+              <div class="package-bottom">
+                <div>
+                  <small>STARTING FROM</small>
+                  <strong>₹12,499 <small>/ person</small></strong>
+                </div>
+                <button class="package-link" data-book="Kerala, at your own pace" aria-label="Enquire about Kerala package">↗</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="package-card reveal" data-package-type="Adventure">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=900&q=85" alt="Manali mountain scenery" loading="lazy">
+              <span>ADVENTURE</span>
+              <button class="save-btn" aria-label="Save Manali package">♡</button>
+            </div>
+            <div class="package-body">
+              <p class="meta">◷ 5 days / 4 nights <span>India</span></p>
+              <h3>Manali mountain trails</h3>
+              <p>Mountain views, scenic drives, and days made for exploring outdoors.</p>
+              <div class="package-bottom">
+                <div>
+                  <small>STARTING FROM</small>
+                  <strong>₹16,999 <small>/ person</small></strong>
+                </div>
+                <button class="package-link" data-book="Manali mountain trails" aria-label="Enquire about Manali package">↗</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="package-card reveal" data-package-type="Beach">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=85" alt="Goa beach" loading="lazy">
+              <span>BEACH ESCAPE</span>
+              <button class="save-btn" aria-label="Save Goa package">♡</button>
+            </div>
+            <div class="package-body">
+              <p class="meta">◷ 3 days / 2 nights <span>India</span></p>
+              <h3>Goa, golden hour edition</h3>
+              <p>Coastal sunsets, colourful streets, and time to do absolutely nothing.</p>
+              <div class="package-bottom">
+                <div>
+                  <small>STARTING FROM</small>
+                  <strong>₹9,999 <small>/ person</small></strong>
+                </div>
+                <button class="package-link" data-book="Goa, golden hour edition" aria-label="Enquire about Goa package">↗</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="package-card reveal" data-package-type="Culture">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=900&q=85" alt="Jaipur heritage architecture" loading="lazy">
+              <span>CULTURE</span>
+              <button class="save-btn" aria-label="Save Jaipur package">♡</button>
+            </div>
+            <div class="package-body">
+              <p class="meta">◷ 3 days / 2 nights <span>India</span></p>
+              <h3>Jaipur through the ages</h3>
+              <p>Palaces, local markets, regional flavours, and stories in every street.</p>
+              <div class="package-bottom">
+                <div>
+                  <small>STARTING FROM</small>
+                  <strong>₹8,499 <small>/ person</small></strong>
+                </div>
+                <button class="package-link" data-book="Jaipur through the ages" aria-label="Enquire about Jaipur package">↗</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="package-card reveal" data-package-type="Nature">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="Ooty hills" loading="lazy">
+              <span>HILL STATION</span>
+              <button class="save-btn" aria-label="Save Ooty package">♡</button>
+            </div>
+            <div class="package-body">
+              <p class="meta">◷ 3 days / 2 nights <span>India</span></p>
+              <h3>Ooty in the clouds</h3>
+              <p>Tea estates, misty mornings, and winding roads through the Nilgiris.</p>
+              <div class="package-bottom">
+                <div>
+                  <small>STARTING FROM</small>
+                  <strong>₹7,499 <small>/ person</small></strong>
+                </div>
+                <button class="package-link" data-book="Ooty in the clouds" aria-label="Enquire about Ooty package">↗</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="package-card reveal" data-package-type="Beach">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85" alt="Bali island landscape" loading="lazy">
+              <span>ISLAND LIFE</span>
+              <button class="save-btn" aria-label="Save Bali package">♡</button>
+            </div>
+            <div class="package-body">
+              <p class="meta">◷ 6 days / 5 nights <span>International</span></p>
+              <h3>Bali beyond the beach</h3>
+              <p>Island temples, emerald rice terraces, and dreamy coastal evenings.</p>
+              <div class="package-bottom">
+                <div>
+                  <small>STARTING FROM</small>
+                  <strong>₹42,999 <small>/ person</small></strong>
+                </div>
+                <button class="package-link" data-book="Bali beyond the beach" aria-label="Enquire about Bali package">↗</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="price-note">
+          *Prices are illustrative sample rates for this student project, not live offers. Actual prices depend on dates, availability, and inclusions.
+        </p>
+      </div>
+    </section>
+
+    <section class="section why">
+      <div class="wrap why-layout">
+        <div class="why-copy reveal">
+          <p class="eyebrow light">THE VACAYTOURS DIFFERENCE</p>
+          <h2>Less planning stress.<br><em>More living the moment.</em></h2>
+          <p>
+            Travel should feel exciting before you leave and unforgettable when you return. We make the details simpler, so you can focus on the experience.
+          </p>
+          <a class="text-link" href="#contact">Let's plan something ↗</a>
+        </div>
+
+        <div class="benefits">
+          <article class="benefit reveal">
+            <span>✧</span>
+            <h3>Thoughtful prices</h3>
+            <p>Flexible ideas and sample budgets for different kinds of travellers.</p>
+            <small>01</small>
+          </article>
+
+          <article class="benefit reveal">
+            <span>⌖</span>
+            <h3>Local perspective</h3>
+            <p>Discover small places and local moments that make a trip special.</p>
+            <small>02</small>
+          </article>
+
+          <article class="benefit reveal">
+            <span>♡</span>
+            <h3>Made for memories</h3>
+            <p>Travel ideas built around experiences, not just ticking off places.</p>
+            <small>03</small>
+          </article>
+
+          <article class="benefit reveal">
+            <span>☏</span>
+            <h3>Here to help</h3>
+            <p>Clear information and a friendly starting point for your travel plans.</p>
+            <small>04</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="gallery">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">A LITTLE TRAVEL INSPIRATION</p>
+          <h2>Postcards from <em>everywhere.</em></h2>
+        </div>
+        <p>Tap any photo to take a closer look and get inspired for your next escape.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <button class="gallery-item tall reveal" data-full="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=90">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=85" alt="Towering mountain range" loading="lazy">
+          <span>THE GREAT OUTDOORS ↗</span>
+        </button>
+
+        <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=90">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=85" alt="Blue ocean and sandy beach" loading="lazy">
+          <span>COASTAL DAYS ↗</span>
+        </button>
+
+        <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1600&q=90">
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=85" alt="Colourful coastal town" loading="lazy">
+          <span>COLOURFUL CORNERS ↗</span>
+        </button>
+
+        <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1600&q=90">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=85" alt="Alpine lake and mountains" loading="lazy">
+          <span>QUIET MOMENTS ↗</span>
+        </button>
+
+        <button class="gallery-item wide reveal" data-full="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1600&q=90">
+          <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1000&q=85" alt="Traveller exploring a scenic landscape" loading="lazy">
+          <span>GO WHERE YOU FEEL ALIVE ↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="wrap about-layout">
+        <div class="about-image reveal">
+          <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=85" alt="Friends travelling together" loading="lazy">
+          <div class="stamp">
+            GO<br>
+            FAR.<br>
+            FEEL<br>
+            MORE.
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="eyebrow">A NOTE FROM US</p>
+          <h2>We believe the world is best seen <em>with wonder.</em></h2>
+          <p>
+            VacayTours is a travel and tourism concept created for people who want more than a checklist of famous places. We bring destination inspiration, thoughtfully arranged trip ideas, and practical starting points together in one place.
+          </p>
+          <p>
+            Whether you are planning your first solo escape, a family holiday, or a spontaneous weekend away, your next story can start right here.
+          </p>
+          <div class="signoff">— &nbsp; Here's to going places.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="wrap contact-layout">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
+          <h2>Have a place<br>in <em>mind?</em></h2>
+          <p>Tell us what you're dreaming of. Complete the form to see a confirmation for your enquiry.</p>
+
+          <div class="contact-detail">
+            <span>✉</span>
+            <div>
+              <small>EMAIL US</small>
+              <p>vacaytours@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span>⌖</span>
+            <div>
+              <small>OUR KIND OF OFFICE</small>
+              <p>Somewhere between here and there</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-row">
+            <label for="name">
+              Your name <i>*</i>
+              <input type="text" id="name" name="name" placeholder="e.g. Alex Morgan" required minlength="2">
+            </label>
+
+            <label for="email">
+              Email address <i>*</i>
+              <input type="email" id="email" name="email" placeholder="yourmail@gmail.com" required>
+            </label>
+          </div>
+
+          <label for="destination">
+            Where would you like to go? <i>*</i>
+            <select id="destination" name="destination" required>
+              <option value="">Choose a destination</option>
+              <option value="Ooty">Ooty</option>
+              <option value="Goa">Goa</option>
+              <option value="Manali">Manali</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Jaipur">Jaipur</option>
+              <option value="Bali">Bali</option>
+              <option value="I'm open to ideas">I'm open to ideas</option>
+            </select>
+          </label>
+
+          <label for="message">
+            Tell us about your trip <i>*</i>
+            <textarea id="message" name="message" rows="4" placeholder="Travel dates, who is coming, or what you want to experience..." required minlength="10"></textarea>
+          </label>
+
+          <button class="button button-dark" type="submit">Send enquiry ↗</button>
+
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">
+            Demo form: details are not sent to a server or stored. This static website demonstrates client-side validation only.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-main">
+      <div>
+        <a class="logo footer-logo" href="#home">
+          <span>✦</span>
+          <b>VacayTours</b>
+        </a>
+        <p class="footer-tag">
+          Go a little further.<br>
+          Come back with a story.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>EXPLORE</h4>
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Tour packages</a>
+        <a href="#gallery">Travel gallery</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>ABOUT</h4>
+        <a href="#about">Our story</a>
+        <a href="#contact">Get in touch</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>FOLLOW THE JOURNEY</h4>
+        <div class="social">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Follow on Instagram">ig</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Follow on Facebook">f</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Subscribe on YouTube">▶</a>
+        </div>
+        <p>@vacaytours</p>
+      </div>
+    </div>
+
+    <div class="wrap footer-bottom">
+      <span>© <span id="year"></span> VacayTours. Made for curious travellers.</span>
+      <span>Static Web Application hosted on AWS Cloud</span>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Photo preview">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close preview">×</button>
+    <button id="lightboxPrev" class="lightbox-prev" aria-label="Previous photo">‹</button>
+    <img id="lightboxImage" src="" alt="Expanded travel photograph">
+    <button id="lightboxNext" class="lightbox-next" aria-label="Next photo">›</button>
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
